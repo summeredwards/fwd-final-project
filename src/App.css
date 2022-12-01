@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/giv3ukl.css");
+
 * {
   box-sizing: border-box;
 }
@@ -5,7 +7,8 @@
 body {
   background-color: #EFF2F1;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: alternate-gothic-no-3-d, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
