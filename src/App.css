@@ -26,12 +26,13 @@ h2{
   color: white;
   font-size: 35px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 h3{
   color: black;
   font-size: 25px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -48,14 +49,14 @@ p {
   width: 450px;
 }
 
-.figure-container {
+.image-container {
   fill: transparent;
   stroke: black;
   stroke-width: 4px;
   stroke-linecap: round;
 }
 
-.figure-part {
+.image-part {
   display: none;
 }
 
@@ -95,7 +96,7 @@ p {
   width: 20px;
 }
 
-.popup-container {
+.endwindow-container {
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -107,7 +108,7 @@ p {
   justify-content: center;
 }
 
-.popup {
+.endwindow {
   background: #8A3033;
   border-radius: 5px;
   box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
@@ -115,7 +116,7 @@ p {
   text-align: center;
 }
 
-.popup button {
+.endwindow button {
   cursor: pointer;
   background-color: #fff;
   color: #8A3033;
@@ -128,13 +129,9 @@ p {
   font-family: alternate-gothic-no-3-d, sans-serif;
 }
 
-.popup button:active {
+.endwindow button:active {
   transform: scale(0.98);
 }
-
-/* .popup button:focus {
-  outline: 0;
-} */
 
 .notification-container {
   background-color: rgba(0, 0, 0, 0.3);

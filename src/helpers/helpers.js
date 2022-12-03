@@ -1,21 +1,21 @@
-export function showNotification(setter){
+export function sameLetterNotification(setter){
     setter(true);
     setTimeout(() =>{
         setter(false);
     }, 2000);
 }
 
-export function checkWin(correct, wrong, word){
+export function checkForWin(correct, wrong, word){
     let status = 'win';
 
-    //check for win
+    //check is player won
     word.split('').forEach(letter =>{
         if(!correct.includes(letter)){
             status = '';
         }
     })
 
-    //check for loss
+    //check if player loss
     if (wrong.length === 6) status = "lose";
 
     return status;

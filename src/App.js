@@ -3,12 +3,12 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
-import Figure from './components/Figure';
+import Image from './components/Image';
 import WrongLetters from './components/WrongLetters';
 import Notification from './components/Notification';
 import Word from './components/Word';
-import Popup from './components/Popup';
-import {showNotification as show} from './helpers/helpers';
+import EndWindow from './components/EndWindow';
+import {sameLetterNotification} from './helpers/helpers';
 
 const animalWords = ['chameleon', 'orangutan', 'turtle', 'dolphin', 'penguin', 'toad',
     'giraffe', 'elephant', 'zebra', 'beaver', 'snail', 'bunny', 'hippopotamus', 'toucan', 'alligator'];
@@ -26,42 +26,40 @@ let selectedWord = animalWords[randomNumber];
 function App() {
   const [categoryName, setCategoryName] = useState('Animals');
   const [category, setCategory] = useState(animalWords);
-  const [playable, setPlayable] = useState(true);
+  const [currentlyPlaying, setPlaying] = useState(true);
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
   const [showNotification, setshowNotification] = useState(false);
 
   useEffect(() => {
-    const handleKeydown = event => {
+    const handlePlayerInput = event => {
       const {key, keyCode} = event;
-        if (playable && keyCode >= 65 && keyCode <= 90) {
+        if (currentlyPlaying && keyCode >= 65 && keyCode <= 90) {
           const letter = key.toLowerCase();
-    
           if (selectedWord.includes(letter)) {
             if (!correctLetters.includes(letter)) {
               setCorrectLetters(currentLetters => [...currentLetters, letter]);
             } else {
-              show(setshowNotification);
+              sameLetterNotification(setshowNotification);
             }
           } else {
             if (!wrongLetters.includes(letter)) {
               setWrongLetters(wrongLetters => [...wrongLetters, letter]);
             } else {
-              show(setshowNotification);
+              sameLetterNotification(setshowNotification);
             }
           }
         }
     }
-    window.addEventListener('keydown', handleKeydown);
+    window.addEventListener('keydown', handlePlayerInput);
 
-    return () => window.removeEventListener('keydown', handleKeydown);
+    return () => window.removeEventListener('keydown', handlePlayerInput);
 
-  }, [correctLetters, wrongLetters, playable]);
+  }, [correctLetters, wrongLetters, currentlyPlaying]);
 
   function playAgain(){
-    setPlayable(true);
+    setPlaying(true);
     
-    //empty arrays
     setCorrectLetters([]);
     setWrongLetters([]);
 
@@ -106,12 +104,12 @@ function techChange(techWords){
     <>
       <Header categoryName={categoryName}/>
       <div className='game-container'>
-        <Figure wrongLetters={wrongLetters}/>
+        <Image wrongLetters={wrongLetters}/>
         <WrongLetters wrongLetters={wrongLetters}/>
         <Word selectedWord={selectedWord} correctLetters={correctLetters} />
       </div>
-      <Popup correctLetters={correctLetters} wrongLetters={wrongLetters} 
-      selectedWord={selectedWord} setPlayable={setPlayable} playAgain={playAgain} 
+      <EndWindow correctLetters={correctLetters} wrongLetters={wrongLetters} 
+      selectedWord={selectedWord} setPlaying={setPlaying} playAgain={playAgain} 
       animalChange={animalChange} foodChange={foodChange} tranChange={tranChange} 
       techChange={techChange} animalWords={animalWords} foodWords={foodWords} 
       tranWords={tranWords} techWords={techWords}/>
