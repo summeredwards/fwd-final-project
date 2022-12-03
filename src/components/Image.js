@@ -19,7 +19,7 @@ const  Image = ({wrongLetters, categoryName}) => {
             theSource = Hamburger1;
             altText = "bottom bun";
         }
-        if (categoryName == "Trasportation"){
+        if (categoryName == "Transportation"){
 
         }
         if (categoryName == "Technology"){
@@ -34,7 +34,7 @@ const  Image = ({wrongLetters, categoryName}) => {
             theSource = Hamburger2;
             altText = "bottom bun with patty";
         }
-        if (categoryName == "Trasportation"){
+        if (categoryName == "Transportation"){
 
         }
         if (categoryName == "Technology"){
@@ -49,7 +49,7 @@ const  Image = ({wrongLetters, categoryName}) => {
             theSource = Hamburger3;
             altText = "bottom bun with patty and cheese";
         }
-        if (categoryName == "Trasportation"){
+        if (categoryName == "Transportation"){
 
         }
         if (categoryName == "Technology"){
@@ -64,7 +64,7 @@ const  Image = ({wrongLetters, categoryName}) => {
             theSource = Hamburger4;
             altText = "bottom bun with patty, cheese, and lettuce";
         }
-        if (categoryName == "Trasportation"){
+        if (categoryName == "Transportation"){
 
         }
         if (categoryName == "Technology"){
@@ -79,7 +79,7 @@ const  Image = ({wrongLetters, categoryName}) => {
             theSource = Hamburger5;
             altText = "bottom bun with patty, cheese, lettuce, and tomato";
         }
-        if (categoryName == "Trasportation"){
+        if (categoryName == "Transportation"){
 
         }
         if (categoryName == "Technology"){
@@ -94,7 +94,7 @@ const  Image = ({wrongLetters, categoryName}) => {
             theSource = Hamburger6;
             altText = "a hamburger";
         }
-        if (categoryName == "Trasportation"){
+        if (categoryName == "Transportation"){
 
         }
         if (categoryName == "Technology"){
