@@ -1,28 +1,112 @@
 import React from 'react'
+import Hamburger1 from './../img/hamburger/burger1.png'
+import Hamburger2 from './../img/hamburger/burger2.png'
+import Hamburger3 from './../img/hamburger/burger3.png'
+import Hamburger4 from './../img/hamburger/burger4.png'
+import Hamburger5 from './../img/hamburger/burger5.png'
+import Hamburger6 from './../img/hamburger/burger6.png'
 
-const  Image = ({wrongLetters}) => {
+const  Image = ({wrongLetters, categoryName}) => {
     const errors = wrongLetters.length;
+    let theSource;
+    let altText;
+
+    if (errors == 1){
+        if (categoryName == "Animals"){
+            
+        }
+        if (categoryName == "Food"){
+            theSource = Hamburger1;
+            altText = "bottom bun";
+        }
+        if (categoryName == "Trasportation"){
+
+        }
+        if (categoryName == "Technology"){
+
+        }
+    }
+    if (errors == 2){
+        if (categoryName == "Animals"){
+            
+        }
+        if (categoryName == "Food"){
+            theSource = Hamburger2;
+            altText = "bottom bun with patty";
+        }
+        if (categoryName == "Trasportation"){
+
+        }
+        if (categoryName == "Technology"){
+
+        }
+    }
+    if (errors == 3){
+        if (categoryName == "Animals"){
+            
+        }
+        if (categoryName == "Food"){
+            theSource = Hamburger3;
+            altText = "bottom bun with patty and cheese";
+        }
+        if (categoryName == "Trasportation"){
+
+        }
+        if (categoryName == "Technology"){
+
+        }
+    }
+    if (errors == 4){
+        if (categoryName == "Animals"){
+            
+        }
+        if (categoryName == "Food"){
+            theSource = Hamburger4;
+            altText = "bottom bun with patty, cheese, and lettuce";
+        }
+        if (categoryName == "Trasportation"){
+
+        }
+        if (categoryName == "Technology"){
+
+        }
+    }
+    if (errors == 5){
+        if (categoryName == "Animals"){
+            
+        }
+        if (categoryName == "Food"){
+            theSource = Hamburger5;
+            altText = "bottom bun with patty, cheese, lettuce, and tomato";
+        }
+        if (categoryName == "Trasportation"){
+
+        }
+        if (categoryName == "Technology"){
+
+        }
+    }
+    if (errors == 6){
+        if (categoryName == "Animals"){
+            
+        }
+        if (categoryName == "Food"){
+            theSource = Hamburger6;
+            altText = "a hamburger";
+        }
+        if (categoryName == "Trasportation"){
+
+        }
+        if (categoryName == "Technology"){
+
+        }
+    }
 
     return(
         <>
-        <svg height="250" width="200" className="image-container">
-            {/* <!-- Rod --> */}
-            <line x1="60" y1="20" x2="140" y2="20" />
-            <line x1="140" y1="20" x2="140" y2="50" />
-            <line x1="60" y1="20" x2="60" y2="230" />
-            <line x1="20" y1="230" x2="100" y2="230" />
-
-            {/* <!-- Head --> */}
-            {errors > 0 && <circle cx="140" cy="70" r="20" />}
-            {/* <!-- Body --> */}
-            {errors > 1 && <line x1="140" y1="90" x2="140" y2="150" />}
-            {/* <!-- Arms --> */}
-            {errors > 2 && <line x1="140" y1="120" x2="120" y2="100" />}
-            {errors > 3 && <line x1="140" y1="120" x2="160" y2="100" />}
-            {/* <!-- Legs --> */}
-            {errors > 4 && <line x1="140" y1="150" x2="120" y2="180" />}
-            {errors > 5 && <line x1="140" y1="150" x2="160" y2="180" />}
-        </svg>
+        <div className="image-container">
+            {errors > 0 && <img className="images" src={theSource} alt={altText} />}
+        </div>
         </>
     )
 }

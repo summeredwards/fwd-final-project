@@ -104,7 +104,7 @@ function techChange(techWords){
     <>
       <Header categoryName={categoryName}/>
       <div className='game-container'>
-        <Image wrongLetters={wrongLetters}/>
+        <Image wrongLetters={wrongLetters} categoryName={categoryName} />
         <WrongLetters wrongLetters={wrongLetters}/>
         <Word selectedWord={selectedWord} correctLetters={correctLetters} />
       </div>
