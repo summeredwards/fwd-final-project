@@ -7,7 +7,6 @@
 body {
   background-color: #EFF2F1;
   color: black;
-  /*font-family: Arial, Helvetica, sans-serif;*/
   font-family: alternate-gothic-no-3-d, sans-serif;
   display: flex;
   flex-direction: column;
@@ -21,6 +20,19 @@ h1 {
   text-align: center;
   margin: 20px 0 0;
   font-size: 40px;
+}
+
+h2{
+  color: white;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3{
+  color: black;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -90,7 +102,6 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  /* display: flex; */
   display: none;
   align-items: center;
   justify-content: center;
@@ -109,18 +120,21 @@ p {
   background-color: #fff;
   color: #8A3033;
   border: 0;
-  margin-top: 20px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 12px 20px;
   font-size: 16px;
+  font-family: alternate-gothic-no-3-d, sans-serif;
 }
 
 .popup button:active {
   transform: scale(0.98);
 }
 
-.popup button:focus {
+/* .popup button:focus {
   outline: 0;
-}
+} */
 
 .notification-container {
   background-color: rgba(0, 0, 0, 0.3);
