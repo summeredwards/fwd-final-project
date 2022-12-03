@@ -50,10 +50,18 @@ p {
 }
 
 .image-container {
+  position: relative;
   fill: transparent;
   stroke: black;
   stroke-width: 4px;
   stroke-linecap: round;
+  height: 225px;
+  width: 350px;
+}
+
+.images{
+  position: absolute;
+  bottom: 0;
 }
 
 .image-part {
