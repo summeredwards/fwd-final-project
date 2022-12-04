@@ -8,7 +8,7 @@ export function sameLetterNotification(setter){
 export function checkForWin(correct, wrong, word){
     let status = 'win';
 
-    //check is player won
+    //check if player won
     word.split('').forEach(letter =>{
         if(!correct.includes(letter)){
             status = '';

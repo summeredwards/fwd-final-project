@@ -11,93 +11,93 @@ const  Image = ({wrongLetters, categoryName}) => {
     let theSource;
     let altText;
 
-    if (errors == 1){
-        if (categoryName == "Animals"){
+    if (errors === 1){
+        if (categoryName === "Animals"){
             
         }
-        if (categoryName == "Food"){
+        if (categoryName === "Food"){
             theSource = Hamburger1;
             altText = "bottom bun";
         }
-        if (categoryName == "Transportation"){
+        if (categoryName === "Transportation"){
 
         }
-        if (categoryName == "Technology"){
+        if (categoryName === "Technology"){
 
         }
     }
-    if (errors == 2){
-        if (categoryName == "Animals"){
+    if (errors === 2){
+        if (categoryName === "Animals"){
             
         }
-        if (categoryName == "Food"){
+        if (categoryName === "Food"){
             theSource = Hamburger2;
             altText = "bottom bun with patty";
         }
-        if (categoryName == "Transportation"){
+        if (categoryName === "Transportation"){
 
         }
-        if (categoryName == "Technology"){
+        if (categoryName === "Technology"){
 
         }
     }
-    if (errors == 3){
-        if (categoryName == "Animals"){
+    if (errors === 3){
+        if (categoryName === "Animals"){
             
         }
-        if (categoryName == "Food"){
+        if (categoryName === "Food"){
             theSource = Hamburger3;
             altText = "bottom bun with patty and cheese";
         }
-        if (categoryName == "Transportation"){
+        if (categoryName === "Transportation"){
 
         }
-        if (categoryName == "Technology"){
+        if (categoryName === "Technology"){
 
         }
     }
-    if (errors == 4){
-        if (categoryName == "Animals"){
+    if (errors === 4){
+        if (categoryName === "Animals"){
             
         }
-        if (categoryName == "Food"){
+        if (categoryName === "Food"){
             theSource = Hamburger4;
             altText = "bottom bun with patty, cheese, and lettuce";
         }
-        if (categoryName == "Transportation"){
+        if (categoryName === "Transportation"){
 
         }
-        if (categoryName == "Technology"){
+        if (categoryName === "Technology"){
 
         }
     }
-    if (errors == 5){
-        if (categoryName == "Animals"){
+    if (errors === 5){
+        if (categoryName === "Animals"){
             
         }
-        if (categoryName == "Food"){
+        if (categoryName === "Food"){
             theSource = Hamburger5;
             altText = "bottom bun with patty, cheese, lettuce, and tomato";
         }
-        if (categoryName == "Transportation"){
+        if (categoryName === "Transportation"){
 
         }
-        if (categoryName == "Technology"){
+        if (categoryName === "Technology"){
 
         }
     }
-    if (errors == 6){
-        if (categoryName == "Animals"){
+    if (errors === 6){
+        if (categoryName === "Animals"){
             
         }
-        if (categoryName == "Food"){
+        if (categoryName === "Food"){
             theSource = Hamburger6;
             altText = "a hamburger";
         }
-        if (categoryName == "Transportation"){
+        if (categoryName === "Transportation"){
 
         }
-        if (categoryName == "Technology"){
+        if (categoryName === "Technology"){
 
         }
     }
