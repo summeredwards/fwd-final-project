@@ -11,6 +11,12 @@ import Dog3 from './../img/dog/dog3.png'
 import Dog4 from './../img/dog/dog4.png'
 import Dog5 from './../img/dog/dog5.png'
 import Dog6 from './../img/dog/dog6.png'
+import Turntable1 from './../img/turntable/table1.png'
+import Turntable2 from './../img/turntable/table2.png'
+import Turntable3 from './../img/turntable/table3.png'
+import Turntable4 from './../img/turntable/table4.png'
+import Turntable5 from './../img/turntable/table5.png'
+import Turntable6 from './../img/turntable/table6.png'
 
 const  Image = ({wrongLetters, categoryName}) => {
     const errors = wrongLetters.length;
@@ -30,7 +36,8 @@ const  Image = ({wrongLetters, categoryName}) => {
 
         }
         if (categoryName === "Technology"){
-
+            theSource = Turntable1;
+            altText = "turntable body";
         }
     }
     if (errors === 2){
@@ -46,7 +53,8 @@ const  Image = ({wrongLetters, categoryName}) => {
 
         }
         if (categoryName === "Technology"){
-
+            theSource = Turntable2;
+            altText = "turntable body and tone arm joint";
         }
     }
     if (errors === 3){
@@ -62,7 +70,8 @@ const  Image = ({wrongLetters, categoryName}) => {
 
         }
         if (categoryName === "Technology"){
-
+            theSource = Turntable3;
+            altText = "turntable body and tone arm";
         }
     }
     if (errors === 4){
@@ -78,7 +87,8 @@ const  Image = ({wrongLetters, categoryName}) => {
 
         }
         if (categoryName === "Technology"){
-
+            theSource = Turntable4;
+            altText = "turntable body, tone arm, and vinyl record";
         }
     }
     if (errors === 5){
@@ -94,7 +104,8 @@ const  Image = ({wrongLetters, categoryName}) => {
 
         }
         if (categoryName === "Technology"){
-
+            theSource = Turntable5;
+            altText = "turntable body, tone arm, vinyl record, and volume slider";
         }
     }
     if (errors === 6){
@@ -110,7 +121,8 @@ const  Image = ({wrongLetters, categoryName}) => {
 
         }
         if (categoryName === "Technology"){
-
+            theSource = Turntable6;
+            altText = "turntable with slider and buttons";
         }
     }
 
