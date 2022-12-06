@@ -17,6 +17,12 @@ import Turntable3 from './../img/turntable/table3.png'
 import Turntable4 from './../img/turntable/table4.png'
 import Turntable5 from './../img/turntable/table5.png'
 import Turntable6 from './../img/turntable/table6.png'
+import Truck1 from './../img/truck/truck1.png'
+import Truck2 from './../img/truck/truck2.png'
+import Truck3 from './../img/truck/truck3.png'
+import Truck4 from './../img/truck/truck4.png'
+import Truck5 from './../img/truck/truck5.png'
+import Truck6 from './../img/truck/truck6.png'
 
 const  Image = ({wrongLetters, categoryName}) => {
     const errors = wrongLetters.length;
@@ -33,7 +39,8 @@ const  Image = ({wrongLetters, categoryName}) => {
             altText = "bottom bun";
         }
         if (categoryName === "Transportation"){
-
+            theSource = Truck1;
+            altText = "trailer";
         }
         if (categoryName === "Technology"){
             theSource = Turntable1;
@@ -50,7 +57,8 @@ const  Image = ({wrongLetters, categoryName}) => {
             altText = "bottom bun with patty";
         }
         if (categoryName === "Transportation"){
-
+            theSource = Truck2;
+            altText = "front and back of a truck";
         }
         if (categoryName === "Technology"){
             theSource = Turntable2;
@@ -67,7 +75,8 @@ const  Image = ({wrongLetters, categoryName}) => {
             altText = "bottom bun with patty and cheese";
         }
         if (categoryName === "Transportation"){
-
+            theSource = Truck3;
+            altText = "front and back of a truck with its back wheels";
         }
         if (categoryName === "Technology"){
             theSource = Turntable3;
@@ -84,7 +93,8 @@ const  Image = ({wrongLetters, categoryName}) => {
             altText = "bottom bun with patty, cheese, and lettuce";
         }
         if (categoryName === "Transportation"){
-
+            theSource = Truck3;
+            altText = "front and back of a truck with its front and back wheels";
         }
         if (categoryName === "Technology"){
             theSource = Turntable4;
@@ -101,7 +111,8 @@ const  Image = ({wrongLetters, categoryName}) => {
             altText = "bottom bun with patty, cheese, lettuce, and tomato";
         }
         if (categoryName === "Transportation"){
-
+            theSource = Truck5;
+            altText = "front and back of a truck with front and back wheels and windows";
         }
         if (categoryName === "Technology"){
             theSource = Turntable5;
@@ -118,7 +129,8 @@ const  Image = ({wrongLetters, categoryName}) => {
             altText = "a hamburger";
         }
         if (categoryName === "Transportation"){
-
+            theSource = Truck6;
+            altText = "front and back of a truck with front and back wheels, windows, headlights, and a door handle";
         }
         if (categoryName === "Technology"){
             theSource = Turntable6;
