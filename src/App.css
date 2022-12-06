@@ -112,7 +112,7 @@ p {
   left: 0;
   right: 0;
   display: none;
-  align-items: center;
+  align-items:flex-start;
   justify-content: center;
 }
 
@@ -120,7 +120,7 @@ p {
   background: #8A3033;
   border-radius: 5px;
   box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
