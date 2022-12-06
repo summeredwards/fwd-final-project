@@ -135,10 +135,22 @@ p {
   padding: 12px 20px;
   font-size: 16px;
   font-family: alternate-gothic-no-3-d, sans-serif;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .endwindow button:active {
   transform: scale(0.98);
+}
+
+.endwindow button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+}
+
+.endwindow button:focus {
+  background-color: black;
+  color: white;
 }
 
 .notification-container {
