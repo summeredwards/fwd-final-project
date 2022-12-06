@@ -102,6 +102,7 @@ function techChange(techWords){
 
   return (
     <>
+     <Notification showNotification={showNotification}/>
       <Header categoryName={categoryName}/>
       <div className='game-container'>
         <Image wrongLetters={wrongLetters} categoryName={categoryName} />
@@ -113,7 +114,6 @@ function techChange(techWords){
       animalChange={animalChange} foodChange={foodChange} tranChange={tranChange} 
       techChange={techChange} animalWords={animalWords} foodWords={foodWords} 
       tranWords={tranWords} techWords={techWords}/>
-      <Notification showNotification={showNotification}/>
     </>
   );
 }

@@ -142,12 +142,18 @@ p {
 }
 
 .notification-container {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 10px 10px 0 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white; 
+  /* border-radius: 10px 10px 0 0;  */
+  border-radius: 0 0 10px 10px;
+  place-items: center;
+  margin: auto; 
+  height: 60px; 
   padding: 15px 20px;
-  position: absolute;
-  bottom: -50px;
+  position: relative;
+  transform: translateY(-200%);
   transition: transform 0.3s ease-in-out;
+
 }
 
 .notification-container p {
@@ -155,5 +161,44 @@ p {
 }
 
 .notification-container.show {
-  transform: translateY(-50px);
+  transform: translateY(0%);
+}
+
+@media screen and (max-width: 640px) {
+  .game-container{
+    max-width: 100vw;
+  }
+
+  .endwindow-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items:flex-start;
+    justify-content: center;
+  }
+  
+  .endwindow {
+    background: #8A3033;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .endwindow button {
+    cursor: pointer;
+    background-color: #fff;
+    color: #8A3033;
+    border: 0;
+    margin: 2vw; 
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: alternate-gothic-no-3-d, sans-serif;
+  }
+
 }
