@@ -71,7 +71,7 @@ p {
 .wrong-letters-container {
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 0px;
   display: flex;
   flex-direction: column;
   text-align: right;
