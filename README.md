@@ -1,1 +1,3 @@
 # Front End Web Final Project
+
+We were inspired by the game, Hangman, and built our own version using ReactJS. Our game offers word categories that a player can choose from after the first round of play. The “hangman” image relates to the category chosen. For example, if the category chosen is food, the “hangman” image is a hamburger. Our game is both fun and challenging to play and serves as a mind break for hardworking students and employees. Our intended audience is anyone interested in playing a quick game of guess the word on their computer. The vocabulary used is middle school to high school level, so preferably ages 12+.
